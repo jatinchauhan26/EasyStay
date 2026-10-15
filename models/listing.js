@@ -6,18 +6,18 @@ title :{
  type:  String,
  required : true ,
 } ,
-description : String,
+description: String,
 image: {
     filename: {
         type: String,
         default: "listingimage"
     },
     url: {
-        type: String,
-        default: "https://unsplash.com/photos/lightning-over-mountains-and-pine-trees-AQsVED63pZA",
+        type: String,default: "https://images.unsplash.com/photo-1520250497591-112f2f40a3f4?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTV8fGhvdGVsc3xlbnwwfHwwfHx8MA%3D%3D&auto=format&fit=crop&w=800&q=60"
+        ,
         set: (v) =>
             v === ""
-                ? "https://unsplash.com/photos/lightning-over-mountains-and-pine-trees-AQsVED63pZA"
+                ? "https://images.unsplash.com/photo-1520250497591-112f2f40a3f4?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTV8fGhvdGVsc3xlbnwwfHwwfHx8MA%3D%3D&auto=format&fit=crop&w=800&q=60"
                 : v
     }
 },
